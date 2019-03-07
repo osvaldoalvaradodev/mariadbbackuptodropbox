@@ -24,4 +24,4 @@ curl -X POST https://content.dropboxapi.com/2/files/upload \
     --header "Authorization: Bearer awesometoken123_" \
     --header "Dropbox-API-Arg: {\"path\": \""$backup_path/$db_name-$date.sql"\"}" \
     --header "Content-Type: application/octet-stream" \
-    --data-binary $backup_path/$db_name-$date.sql
+    --data-binary @$backup_path/$db_name-$date.sql
